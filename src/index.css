@@ -3,24 +3,6 @@
 
 
 @theme {
-  --color-background: oklch(0.141 0.005 285.823);
-  --color-foreground: oklch(0.985 0 0);
-  --color-card: oklch(0.21 0.006 285.885);
-  --color-card-foreground: oklch(0.985 0 0);
-  --color-popover: oklch(0.21 0.006 285.885);
-  --color-popover-foreground: oklch(0.985 0 0);
-  --color-primary: oklch(0.696 0.17 162.48);
-  --color-primary-foreground: oklch(0.393 0.095 152.535);
-  --color-secondary: oklch(0.274 0.006 286.033);
-  --color-secondary-foreground: oklch(0.985 0 0);
-  --color-muted: oklch(0.274 0.006 286.033);
-  --color-muted-foreground: oklch(0.705 0.015 286.067);
-  --color-accent: oklch(0.274 0.006 286.033);
-  --color-accent-foreground: oklch(0.985 0 0);
-  --color-destructive: oklch(0.704 0.191 22.216);
-  --color-border: oklch(1 0 0 / 10%);
-  --color-input: oklch(1 0 0 / 15%);
-  --color-ring: oklch(0.527 0.154 150.069);
   --color-chart-1: oklch(0.488 0.243 264.376);
   --color-chart-2: oklch(0.696 0.17 162.48);
   --color-chart-3: oklch(0.769 0.188 70.08);
@@ -36,20 +18,20 @@
   --color-sidebar-ring: oklch(0.527 0.154 150.069);
 
 
-  --color-background: oklch(25.1% 0.022 181.8); /* #18201e */
-  --color-foreground: oklch(93.9% 0.01 165.7); /* #e3e8e5 */
+  --color-background: oklch(0 0 0); /* #18201e */
+  --color-foreground: oklch(1 0 0); /* #e3e8e5 */
 
-  --color-card: oklch(29.1% 0.024 182.2); /* #242e2c */
-  --color-card-foreground: oklch(93.9% 0.01 165.7);
+  --color-card: oklch(0.05 0 0); /* #242e2c */
+  --color-card-foreground: oklch(1 0 0);
 
-  --color-popover: oklch(29.1% 0.024 182.2);
-  --color-popover-foreground: oklch(93.9% 0.01 165.7);
+  --color-popover: oklch(0.05 0 0);
+  --color-popover-foreground: oklch(1 0 0);
 
-  --color-primary: oklch(44.9% 0.151 187.9); /* #037764 cyan tone */
-  --color-primary-foreground: oklch(93.9% 0.01 165.7);
+  --color-primary: oklch(1 0 0); /* #037764 cyan tone */
+  --color-primary-foreground: oklch(0 0 0);
 
-  --color-secondary: oklch(45.5% 0.018 181.2); /* #5a6d6a */
-  --color-secondary-foreground: oklch(93.9% 0.01 165.7);
+  --color-secondary: oklch(0.10 0 0); /* #5a6d6a */
+  --color-secondary-foreground: oklch(0.60 0 0);
 
   --color-muted: oklch(45.5% 0.018 181.2);
   --color-muted-foreground: oklch(67.2% 0.014 171.4); /* #9daaa2 */
@@ -87,6 +69,6 @@
   }
 
   ::selection {
-    background: hsl(var(--terminal-cyan) / 0.3);
+    background: rgb(255 255 255 / 0.2);;
   }
 }

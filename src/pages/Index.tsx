@@ -1,3 +1,4 @@
+import InteractiveGrid from "@/components/InteractiveGrid";
 import { ExternalLink, Github, Mail, Linkedin } from "lucide-react";
 
 interface Project {
@@ -8,9 +9,9 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Project One",
-    description: "A full-stack web application with React and Node.js",
-    repo: "https://github.com/username/project-one",
+    title: "wrenchi",
+    description: "A lightweight Linux system diagnostics tool built in Go. Made to monitor CPU, memory, and system performance while improving my Go skills.",
+    repo: "https://github.com/gustavocsak/wrenchi",
   },
   {
     title: "Project Two",
@@ -32,6 +33,7 @@ const projects: Project[] = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <InteractiveGrid />
       <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
         {/* Header */}
         <header className="mb-16 md:mb-24">
@@ -89,10 +91,10 @@ const Index = () => {
               className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-terminal-cyan"
             >
               <Mail className="h-4 w-4" />
-              <span>your.email@example.com</span>
+              <span>gustavocsak@gmail.com</span>
             </a>
             <a
-              href="https://github.com/username"
+              href="https://github.com/gustavocsak"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-terminal-cyan"
@@ -101,7 +103,7 @@ const Index = () => {
               <span>GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/username"
+              href="https://www.linkedin.com/in/gustavo-de-sa/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-terminal-cyan"
