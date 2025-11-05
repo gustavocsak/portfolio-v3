@@ -19,7 +19,7 @@ const InteractiveGrid = () => {
     window.addEventListener("resize", resize);
 
     const gridSize = 50;
-    const highlightRadius = 150;
+    const highlightRadius = 200;
 
     const handleMouseMove = (e: MouseEvent) => {
       mousePos.current = { x: e.clientX, y: e.clientY };
@@ -35,10 +35,10 @@ const InteractiveGrid = () => {
           const dy = mousePos.current.y - y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          let opacity = 0.05;
+          let opacity = 0.02;
           if (distance < highlightRadius) {
             const intensity = 1 - distance / highlightRadius;
-            opacity = 0.04 + intensity * 0.12;
+            opacity = 0.01 + intensity * 0.05;
           }
 
           ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
@@ -81,4 +81,3 @@ const InteractiveGrid = () => {
 };
 
 export default InteractiveGrid;
-
