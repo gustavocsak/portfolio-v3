@@ -51,26 +51,28 @@ const Index = () => {
           {projects.map((project, index) => (
             <article
               key={index}
-              className="group relative rounded border border-border bg-card p-6 transition-colors hover:border-accent"
+              className="group relative rounded border border-border bg-card transition-colors hover:border-accent"
             >
-              <div className="mb-2 flex items-start justify-between gap-4">
-                <h3 className="text-lg font-semibold text-foreground">
-                  {project.title}
-                </h3>
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-sm text-terminal-cyan transition-colors hover:text-terminal-cyan-bright"
-                  aria-label={`View ${project.title} on GitHub`}
-                >
-                  <Github className="h-4 w-4" />
-                  <ExternalLink className="h-3 w-3" />
-                </a>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                {project.description}
-              </p>
+              <a
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-6"
+                aria-label={`View ${project.title} on GitHub`}
+              >
+                <div className="mb-2 flex items-start justify-between gap-4">
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-terminal-cyan transition-colors">
+                    {project.title}
+                  </h3>
+                  <div className="flex items-center gap-1 text-sm text-terminal-cyan transition-colors group-hover:text-terminal-cyan-bright">
+                    <Github className="h-4 w-4" />
+                    <ExternalLink className="h-3 w-3" />
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {project.description}
+                </p>
+              </a>
             </article>
           ))}
         </div>
